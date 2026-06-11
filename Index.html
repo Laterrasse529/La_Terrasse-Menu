@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0"/>
+  <meta name="description" content="La Terrasse Café & Resto — Menu digital, Korba, Tunisia"/>
+  <meta name="theme-color" content="#3C4A30"/>
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="apple-mobile-web-app-status-bar-style" content="default"/>
+  <title>La Terrasse — Menu</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Nunito:wght@300;400;500;600;700&family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet"/>
+
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- ╔══════════════════════════════════════╗
+     ║            HEADER                    ║
+     ╚══════════════════════════════════════╝ -->
+<header class="site-header">
+
+  <!-- Feuilles botaniques décoratives (coins) -->
+  <svg class="leaf-corner leaf-tl" viewBox="0 0 200 220" aria-hidden="true" focusable="false">
+    <path d="M 0 0 C 30 10, 80 20, 130 70 C 110 85, 70 100, 20 110 Z" fill="currentColor" opacity="0.12"/>
+    <path d="M 10 0 C 40 15, 90 35, 140 90" fill="none" stroke="currentColor" stroke-width="1.2" opacity="0.15"/>
+    <path d="M 0 20 C 25 30, 60 55, 90 95" fill="none" stroke="currentColor" stroke-width="0.7" opacity="0.1"/>
+    <path d="M -5 50 C 20 50, 50 70, 70 110" fill="none" stroke="currentColor" stroke-width="0.5" opacity="0.08"/>
+  </svg>
+  <svg class="leaf-corner leaf-tr" viewBox="0 0 200 220" aria-hidden="true" focusable="false">
+    <path d="M 200 0 C 170 10, 120 20, 70 70 C 90 85, 130 100, 180 110 Z" fill="currentColor" opacity="0.12"/>
+    <path d="M 190 0 C 160 15, 110 35, 60 90" fill="none" stroke="currentColor" stroke-width="1.2" opacity="0.15"/>
+    <path d="M 200 20 C 175 30, 140 55, 110 95" fill="none" stroke="currentColor" stroke-width="0.7" opacity="0.1"/>
+    <path d="M 205 50 C 180 50, 150 70, 130 110" fill="none" stroke="currentColor" stroke-width="0.5" opacity="0.08"/>
+  </svg>
+
+  <!-- Logo SVG (reproduction fidèle du logo original) -->
+  <div class="logo-wrap">
+    <svg class="logo-svg" viewBox="0 0 160 160" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Logo La Terrasse">
+      <!-- Cercle externe -->
+      <circle cx="80" cy="80" r="72" fill="none" stroke="currentColor" stroke-width="1.8"/>
+      <!-- Texte LA -->
+      <text x="80" y="47" text-anchor="middle" fill="currentColor"
+            font-family="'Playfair Display', Georgia, serif"
+            font-size="11.5" letter-spacing="4" font-weight="400">LA</text>
+      <!-- Texte TERRASSE -->
+      <text x="80" y="62" text-anchor="middle" fill="currentColor"
+            font-family="'Playfair Display', Georgia, serif"
+            font-size="8" letter-spacing="2.5" font-weight="400">TERRASSE</text>
+      <!-- Ligne séparatrice -->
+      <line x1="50" y1="68" x2="110" y2="68" stroke="currentColor" stroke-width="0.8"/>
+      <!-- Motif géométrique : 3 diamants en symétrie radiale 120° -->
+      <g transform="translate(80, 97)">
+        <polygon points="0,-27 8,0 0,27 -8,0"
+                 fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+        <polygon points="0,-27 8,0 0,27 -8,0"
+                 fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"
+                 transform="rotate(120)"/>
+        <polygon points="0,-27 8,0 0,27 -8,0"
+                 fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"
+                 transform="rotate(240)"/>
+      </g>
+    </svg>
+  </div>
+
+  <!-- Nom de la marque -->
+  <h1 class="brand-name">La Terrasse</h1>
+  <p class="brand-sub">Café &amp; Resto</p>
+
+  <!-- Ligne ornementale -->
+  <div class="brand-rule">
+    <span class="brand-rule__line"></span>
+    <span class="brand-rule__gem">✦</span>
+    <span class="brand-rule__line"></span>
+  </div>
+
+  <!-- Citation bilingue -->
+  <blockquote class="brand-quote">
+    <div class="quote-mark quote-mark--open">"</div>
+    <p class="quote-fr">À La Terrasse, chaque café raconte une rencontre,<br>chaque plat partage un moment.</p>
+    <div class="quote-mark quote-mark--close">"</div>
+    <p class="quote-en">At La Terrasse, every coffee tells a story,<br>and every dish is made to be shared.</p>
+  </blockquote>
+
+</header>
+
+<!-- ╔══════════════════════════════════════╗
+     ║          BARRE INFO                  ║
+     ╚══════════════════════════════════════╝ -->
+<section class="info-bar" aria-label="Informations pratiques">
+
+  <div class="info-cell">
+    <span class="info-icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+        <circle cx="12" cy="10" r="3"/>
+      </svg>
+    </span>
+    <span class="info-label">Adresse</span>
+    <span class="info-val">HVG7+J62,<br>Korba, Tunisia</span>
+  </div>
+
+  <div class="info-sep" aria-hidden="true"></div>
+
+  <div class="info-cell">
+    <span class="info-icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+        <circle cx="12" cy="12" r="10"/>
+        <polyline points="12 6 12 12 16 14"/>
+      </svg>
+    </span>
+    <span class="info-label">Horaires</span>
+    <span class="info-val">7h – 01h<br>Tous les jours</span>
+  </div>
+
+  <div class="info-sep" aria-hidden="true"></div>
+
+  <div class="info-cell">
+    <span class="info-icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+        <path d="M5 12.55a11 11 0 0114.08 0"/>
+        <path d="M1.42 9a16 16 0 0121.16 0"/>
+        <path d="M8.53 16.11a6 6 0 016.95 0"/>
+        <line x1="12" y1="20" x2="12.01" y2="20"/>
+      </svg>
+    </span>
+    <span class="info-label">WiFi</span>
+    <span class="info-val">Demandez<br>à l'accueil</span>
+  </div>
+
+</section>
+
+<!-- ╔══════════════════════════════════════╗
+     ║             MENU                     ║
+     ╚══════════════════════════════════════╝ -->
+<main class="menu-main" id="menu-main">
+
+  <div class="menu-hd">
+    <h2 class="menu-hd__title">Notre Menu</h2>
+    <div class="menu-hd__rule">
+      <span></span>
+      <svg viewBox="0 0 20 12" aria-hidden="true"><path d="M2 6 Q10 1 18 6 Q10 11 2 6Z" fill="currentColor" opacity="0.5"/></svg>
+      <span></span>
+    </div>
+  </div>
+
+  <!-- État : chargement -->
+  <div class="state-box state-loading" id="stateLoading" aria-live="polite" aria-label="Chargement du menu">
+    <div class="spinner">
+      <svg viewBox="0 0 50 50" aria-hidden="true">
+        <circle cx="25" cy="25" r="20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-dasharray="80 40"/>
+      </svg>
+    </div>
+    <p>Chargement du menu…</p>
+  </div>
+
+  <!-- État : erreur -->
+  <div class="state-box state-error hidden" id="stateError" aria-live="assertive">
+    <span class="state-error__icon" aria-hidden="true">⚠️</span>
+    <p>Impossible de charger le menu.<br>Vérifiez votre connexion internet.</p>
+    <button class="btn-retry" onclick="fetchMenu()" aria-label="Réessayer de charger le menu">
+      ↺ &nbsp;Réessayer
+    </button>
+  </div>
+
+  <!-- Conteneur des catégories (rempli par JS) -->
+  <div class="cat-list" id="catList" role="list" aria-label="Catégories du menu"></div>
+
+</main>
+
+<!-- ╔══════════════════════════════════════╗
+     ║             FOOTER                   ║
+     ╚══════════════════════════════════════╝ -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <p class="footer-sig" aria-label="Merci">Merci <span aria-hidden="true">♡</span></p>
+    <p class="footer-thanks">
+      Merci de choisir La Terrasse.<br>
+      <em>Thank you for choosing La Terrasse.</em>
+    </p>
+    <div class="footer-rule" aria-hidden="true"></div>
+    <p class="footer-brand">La Terrasse Café &amp; Resto &nbsp;♡</p>
+  </div>
+</footer>
+
+<!-- Bouton WhatsApp flottant -->
+<!-- ⚠️ REMPLACEZ 21600000000 par votre numéro WhatsApp (indicatif inclus, sans le +) -->
+<a class="wa-fab" href="https://wa.me/21600000000"
+   target="_blank" rel="noopener noreferrer"
+   aria-label="Nous contacter sur WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+  </svg>
+  <span class="wa-fab__label">WhatsApp</span>
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>
